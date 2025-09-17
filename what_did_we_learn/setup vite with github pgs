@@ -1,0 +1,7 @@
+use two branches, one for dev, one for github pages to source from
+
+npm run build will create a dist folder, in which the assets folder and index.html should be moved to source branch (will need to manually do for each new build)
+
+in vite.config.ts, add  base: "./"  under plugins to get images to load correctly (put all images in scr/assets folder and fix paths accordingly in App.tsx)
+
+in index.html, change the "/vite.svg" to "./vite.svg"
